@@ -1,0 +1,100 @@
+li{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection{
+    background: none;
+    color: inherit;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    .box{
+        width: fit-content;
+        height: 200px;
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        #name{
+            width: fit-content;
+            height: 50%;
+            font-size: 40px;
+            text-align: center;
+            // border: solid 1px rgb(39, 151, 39);
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .copyBtn{
+            width: 300px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(93, 182, 255);
+            border-radius: 50px;
+            cursor: copy;
+            transition: 0.4s;
+        }
+    }
+}
+
+.mode{
+    width: 200px;
+    background: white;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    
+    #indicate{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;left: 0;
+        // background: #000;
+        z-index: -1;
+        border-radius: inherit;
+        padding: 20px;
+        div{
+            width: 33.33%;
+            height: 60%;
+            border-radius: 100px;
+            background: rgb(190, 190, 190);
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(10%,-50%);
+            transition: 0.4s;
+        }
+    }
+
+    div{
+        width: 33.33%;
+        text-align: center;
+        cursor: pointer;
+    }
+}
