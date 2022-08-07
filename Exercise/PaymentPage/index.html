@@ -4,13 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <span></span>
+        <span></span>
+        <span></span>
+    </header>
+    <main>
+        <div class="cardNinfo">
+            <div class="infohead"></div>
+            <div class="cardcontainer"></div>
+            <div class="recieverinfo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cost">
+                <div class="number"></div>
+                <div class="text"></div>
+            </div>
+        </div>
+        <!-- ------------------------- -->
+        <div class="userInfo">
+            <div class="inputHeader"></div>
+            <div class="inputBox">
+
+                <!-- card number -->
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <!-- CVV2 -->
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <!-- expiration date -->
+                <input type="text">
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <!-- security code -->
+                <div id="randomNumb"></div>
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <!-- card password -->
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <!-- email -->
+                <input type="text">
+                <span>
+                    <span></span>
+                </span>
+
+                <div class="cancel"></div>
+                <div class="proceed"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
 </body>
 <script src="master.js"></script>
 </html>
