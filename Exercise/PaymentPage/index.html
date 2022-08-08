@@ -11,70 +11,117 @@
 </head>
 <body>
     <header>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span><img src="asset/behpardakht_logo.svg" alt="behpardakht"></span>
+
+        <span>
+            <p>پرداخت اینترنتی به پرداخت بانک ملت</p>
+            <a href="https://arashkh.com" target="_blank">www.Arashkh.com</a>
+            <img src="asset/mellat_arc.svg" alt="redCircle">
+        </span>
+
+        <span>
+            <img src="asset/shaparak_logo.svg" alt="shaparak_logo">
+        </span>
+
     </header>
     <main>
         <div class="cardNinfo">
-            <div class="infohead"></div>
-            <div class="cardcontainer"></div>
+            <div class="infohead">
+                <span>
+                    اطلاعات پرداخت
+                </span>
+            </div>
+            <div class="cardcontainer">
+                <div id="card">
+                    <div id="cardnumber">
+                        <span>xxxx</span>
+                        <span>xxxx</span>
+                        <span>xxxx</span>
+                        <span>xxxx</span>
+                    </div>
+                    <div id="cvv2section">cvv2 : <span>xxxx</span></div>
+                    <div id="expsection">
+                        <span>xx</span>
+                        <span>/</span>
+                        <span>xx</span>
+                    </div>
+                </div>
+            </div>
             <div class="recieverinfo">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>نام پذیرنده: آرش خیراللهی</span>
+                <span> <span>286488828</span> :شماره پذیرنده</span>
+                <span> <a href="https://arashkh.com">Arashkh.com</a> :آدرس وبسایت</span>
             </div>
             <div class="cost">
-                <div class="number"></div>
-                <div class="text"></div>
+                <div class="number"><span>ریال</span> <span>4,500,000</span></div>
+                <div class="text">مبلغ قابل پرداخت</div>
             </div>
         </div>
         <!-- ------------------------- -->
         <div class="userInfo">
-            <div class="inputHeader"></div>
-            <div class="inputBox">
+            <div class="backdiv">
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+                <div class="bg3"></div>
+            </div>
+            <div class="inputHeader">
+                <div class="timer">
+                    <span class="time">11:00</span>
+                    <span>:زمان باقی مانده</span>
+                </div>
+                <span>اطلاعات کارت</span>
+            </div>
+            <form class="inputBox">
 
                 <!-- card number -->
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+                <input maxlength="19" type="number"  autocomplete="off"  name="cardInput" id="cardnum" inputmode="numeric">
+                <label for="cardnum">
+                    شماره کارت
+                    <span>شماره کارت 16 رقمی درج شده روی کارت را وارد نمایید</span>
+                </label>
 
                 <!-- CVV2 -->
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+            <input placeholder="CVV2" maxlength="4" type="number"  autocomplete="off"  name="cardInput" id="cvv2">
+                <label for="cvv2">
+                    2شماره شناسایی
+                    <span>شماره 3 یا 4 رقممی درج شده روی کارت را وارد نمایید</span>
+                </label>
 
                 <!-- expiration date -->
-                <input type="text">
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+                <input maxlength="2" placeholder="سال" type="number"  autocomplete="off"  name="cardInput" id="exp">
+                <input maxlength="2" placeholder="ماه" type="number"  autocomplete="off" id="exp2" >
+                <label for="exp">
+                    تاریخ انقضای کارت
+                    <span>تاریخ انقضای کارت را وارد کنید</span>
+                </label>
 
                 <!-- security code -->
                 <div id="randomNumb"></div>
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+                <input type="number"  autocomplete="off"  name="cardInput" id="scrCode">
+                <label for="scrCode">
+                    کد امنیتی
+                    <span>لطفا کد امنیتی داخل کادر را وارد نمایید</span>
+                </label>
 
                 <!-- card password -->
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+                <input type="number"  autocomplete="off"  name="cardInput" id="pass">
+                <label for="pass">
+                    رمز اینترنتی کارت
+                    <span>رمز اینترنتی را وارد نمایید</span>
+                </label>
 
                 <!-- email -->
-                <input type="text">
-                <span>
-                    <span></span>
-                </span>
+                <input type="email" name="cardInput" id="email" autocomplete="off">
+                <label for="email">
+                    ایمیل
+                    <span>لطفا ایمیل معتبر وارد نمایید (اختیاری)</span>
+                </label>
 
-                <div class="cancel"></div>
-                <div class="proceed"></div>
-            </div>
+                <div class="buttons">
+                    <div class="cancel">انصراف</div>
+                    <div class="proceed">پرداخت</div>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
