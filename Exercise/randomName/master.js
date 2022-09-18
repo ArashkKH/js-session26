@@ -40,7 +40,7 @@ function nameGenerate(){
         button$.innerHTML='Copy to clipBoard'
         button$.style.background='rgb(93, 182, 255)'
     }
-    document.getElementById('name').innerHTML=genName
+    document.getElementById('name').innerHTML=genName   
     document.getElementsByTagName('main')[0].style.background=' linear-gradient('+(Math.random())*360+'deg, rgb('+(Math.random())*256+','+(Math.random())*256+','+(Math.random())*256+'),rgb('+(Math.random())*256+','+(Math.random())*256+','+(Math.random())*256+'))'
 }
 
